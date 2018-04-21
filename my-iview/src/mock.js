@@ -11,3 +11,21 @@ const produceNewsData = function () {
 
 // Mock.mock( url, post/get , 返回的数据)；
 Mock.mock(new RegExp('/auth/oauth/token'), 'post', produceNewsData)
+
+const usersData = {
+  'histories': [{
+    'username': '智能审批',
+    'shenpistatus': '审批已通过',
+    'shenpicomments': '自动审批通过',
+    'time': '2017-07-24 18:11'
+  },
+  {
+    'username': '智能审批',
+    'shenpistatus': '审批已通过',
+    'shenpicomments': '自动审批通过',
+    'time': '2017-07-24 18:11'
+  }]
+}
+
+// Mock.mock( url, post/get , 返回的数据)；
+Mock.mock(new RegExp('/users/showall'), 'post', usersData)

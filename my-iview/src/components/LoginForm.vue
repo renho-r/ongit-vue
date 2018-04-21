@@ -42,7 +42,8 @@ export default {
           this.$store.dispatch('Login', this.loginForm).then(() => {
             this.$Message.success('提交成功!')
             this.loading = false
-            this.$router.push({path: '/'})
+            this.$router.push({path: '/login'})
+            this.loginForm.user = this.$store.state.user.user
           }).catch(() => {
             this.$Message.success('提交失败!')
             this.loading = false
