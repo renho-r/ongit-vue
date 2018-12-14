@@ -6,9 +6,11 @@ const Mock = require('mockjs')
 const indexPicsData = function () {
   return {
     data: [
-      {id: 1, idView: require('./assets/logo.png')},
-      {id: 2, idView: require('./assets/logo.png')},
-      {id: 3, idView: require('./assets/logo.png')}
+      {id: 1, idView: require('./assets/img/29523-105.jpg')},
+      {id: 2, idView: require('./assets/img/37459-105.jpg')},
+      {id: 3, idView: require('./assets/img/30213-105.jpg')},
+      {id: 4, idView: require('./assets/img/33740-105.jpg')},
+      {id: 5, idView: require('./assets/img/35005-105.jpg')}
     ]
   }
 }

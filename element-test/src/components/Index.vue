@@ -1,8 +1,8 @@
 <template>
-  <el-carousel :interval="3000" arrow="always" height="400px">
+  <el-carousel :interval="3000" height="200px" type="card">
     <el-carousel-item v-for="item in indexPics" :key="item.id">
       <el-row>
-        <el-col><img ref="imgHeight" :src="item.idView"/></el-col>
+        <el-col><img ref="imgHeight" :src="item.idView" width="100%" height="200px"/></el-col>
       </el-row>
     </el-carousel-item>
   </el-carousel>
@@ -42,7 +42,7 @@ export default {
     color: #475669;
     font-size: 14px;
     opacity: 0.75;
-    line-height: 400px;
+    /*line-height: 400px;*/
     margin: 0;
   }
 
